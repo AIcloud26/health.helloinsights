@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Article - HelloInsights Health</title>
+  <meta name="description" id="page-desc" content="Read the latest health insights, research summaries, and practical guides on HelloInsights Health.">
+  <link rel="canonical" id="page-canonical" href="https://health.helloinsights.online/article.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" id="og-title" content="Article - HelloInsights Health">
+  <meta property="og:description" id="og-desc" content="">
+  <meta property="og:url" id="og-url" content="https://health.helloinsights.online/article.html">
+  <meta property="og:site_name" content="HelloInsights Health">
+  <meta property="og:image" id="og-image" content="https://health.helloinsights.online/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="tw-title" content="Article - HelloInsights Health">
+  <meta name="twitter:description" id="tw-desc" content="">
+  <meta name="twitter:image" id="tw-image" content="https://health.helloinsights.online/og-image.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ff6b35'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-weight='bold'>H</text></svg>">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .article-content img {
+      border-radius: var(--radius);
+      margin: 24px 0;
+    }
+    .evidence-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin: 8px 0;
+    }
+    .evidence-badge.fact {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .evidence-badge.supported {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .evidence-badge.uncertain {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+    .evidence-badge svg {
+      width: 14px;
+      height: 14px;
+    }
+    .evidence-block {
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 16px 0;
+      background: #fff7ed;
+      border-radius: 0 8px 8px 0;
+    }
+    .source-citations {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px 0;
+      border-top: 1px solid #f3f4f6;
+    }
+    .source-citations h3 {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      color: #374151;
+    }
+    .source-citations ol {
+      padding-left: 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .source-citations li {
+      margin-bottom: 6px;
+    }
+    .source-citations a {
+      color: #ff6b35;
+      text-decoration: none;
+    }
+    .source-citations a:hover {
+      text-decoration: underline;
+    }
+    .medical-disclaimer {
+      max-width: 780px;
+      margin: 24px auto;
+      padding: 20px 24px;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      color: #0c4a6e;
+      line-height: 1.6;
+    }
+    .medical-disclaimer strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+    .article-standfirst {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: #4b5563;
+      max-width: 780px;
+      margin: 0 auto 24px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="HelloInsights Health - Home">
+          <span class="logo-icon" aria-hidden="true">H</span>
+          <span class="logo-text">Hello<span>Insights</span></span>
+          <span class="logo-label">Health</span>
+        </a>
+        <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="research.html">Research</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="sleep.html">Sleep</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="trends.html">Trends</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="search-btn" id="search-btn" aria-label="Open search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-overlay" id="search-overlay" aria-hidden="true" role="dialog" aria-label="Search">
+    <div class="search-box">
+      <div class="search-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" class="search-input" id="search-input" placeholder="Search health articles..." autocomplete="off" aria-label="Search input">
+        <button class="search-close" id="search-close" aria-label="Close search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="search-results" id="search-results">
+        <p class="search-hint">Start typing to search health articles...</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="container">
+      <div id="article-container">
+        <!-- Loading state -->
+        <div style="text-align:center;padding:80px 20px;color:#6b7280;">
+          <p>Loading article...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="HelloInsights Health - Home">
+            <span class="logo-icon" aria-hidden="true">H</span>
+            <span class="logo-text">Hello<span>Insights</span></span>
+          </a>
+          <p>Clear health information you can actually use. Evidence-based, no hype.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Health Topics</h4>
+          <a href="research.html">Research</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="fitness.html">Fitness</a>
+          <a href="sleep.html">Sleep</a>
+          <a href="lifestyle.html">Lifestyle</a>
+          <a href="trends.html">Trends</a>
+        </div>
+        <div class="footer-col">
+          <h4>HelloInsights</h4>
+          <a href="https://helloinsights.online/">Main Site</a>
+          <a href="https://ai.helloinsights.online/">AI</a>
+          <a href="https://finance.helloinsights.online/">Finance</a>
+          <a href="https://health.helloinsights.online/">Health</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HelloInsights Health. All rights reserved.</p>
+        <div><a href="#">Privacy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a> &nbsp;&middot;&nbsp; <a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="ads-config.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      var HI = window.HelloInsights;
+
+      function formatContent(content) {
+        if (!content) return '';
+        var paragraphs = content.split('\n\n');
+        var html = '';
+        for (var i = 0; i < paragraphs.length; i++) {
+          var p = paragraphs[i].trim();
+          if (!p) continue;
+
+          /* Evidence badge markers */
+          if (p.indexOf('[FACT]') === 0) {
+            html += '<div class="evidence-block">';
+            html += '<span class="evidence-badge fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10"></circle></svg> Fact</span>';
+            html += '<p>' + HI.sanitizeStr(p.replace('[FACT]', '')) + '</p>';
+            html += '</div>';
+            continue;
+          }
+          if (p.indexOf('[SUPPORTED INTERPRETATION]') === 0) {
+            html += '<div class="evidence-block">';
+            html += '<span class="evidence-badge supported"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 9v4m0 4h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path></svg> Supported Interpretation</span>';
+            html += '<p>' + HI.sanitizeStr(p.replace('[SUPPORTED INTERPRETATION]', '')) + '</p>';
+            html += '</div>';
+            continue;
+          }
+          if (p.indexOf('[UNCERTAIN]') === 0) {
+            html += '<div class="evidence-block">';
+            html += '<span class="evidence-badge uncertain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg> Uncertain</span>';
+            html += '<p>' + HI.sanitizeStr(p.replace('[UNCERTAIN]', '')) + '</p>';
+            html += '</div>';
+            continue;
+          }
+
+          /* Check if it looks like a heading */
+          if (p.length < 80 && (
+            /^\d+\.\s/.test(p) ||
+            /^[A-Z][a-z]+:/.test(p)
+          )) {
+            if (p.length < 60 && !p.indexOf(' ') > 30) {
+              html += '<h2>' + HI.sanitizeStr(p) + '</h2>';
+              continue;
+            }
+          }
+
+          /* Check for list items */
+          var lines = p.split('\n');
+          var isList = false;
+          for (var j = 0; j < lines.length; j++) {
+            if (/^[-\u2022]\s/.test(lines[j].trim()) || /^\d+\.\s/.test(lines[j].trim())) {
+              isList = true;
+              break;
+            }
+          }
+
+          if (isList) {
+            html += '<ul>';
+            for (var k = 0; k < lines.length; k++) {
+              var line = lines[k].trim();
+              if (!line) continue;
+              line = line.replace(/^[-\u2022]\s*/, '').replace(/^\d+\.\s*/, '');
+              html += '<li>' + HI.sanitizeStr(line) + '</li>';
+            }
+            html += '</ul>';
+          } else {
+            var escaped = HI.sanitizeStr(p);
+            escaped = escaped.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
+            html += '<p>' + escaped + '</p>';
+          }
+        }
+        return html;
+      }
+
+      function renderSources(article) {
+        if (!article.sources || article.sources.length === 0) return '';
+        var html = '<div class="source-citations">';
+        html += '<h3>Sources &amp; References</h3>';
+        html += '<ol>';
+        for (var i = 0; i < article.sources.length; i++) {
+          var src = article.sources[i];
+          if (typeof src === 'string') {
+            html += '<li>' + HI.sanitizeStr(src) + '</li>';
+          } else if (src.title && src.url) {
+            html += '<li><a href="' + HI.sanitizeUrl(src.url) + '" target="_blank" rel="noopener noreferrer">' + HI.sanitizeStr(src.title) + '</a></li>';
+          }
+        }
+        html += '</ol></div>';
+        return html;
+      }
+
+      function renderArticle(article) {
+        var container = document.getElementById('article-container');
+        var catColor = HI.getCategoryColor(article.category);
+        var catLabel = HI.getCategoryLabel(article.category);
+        var imgUrl = HI.sanitizeUrl(article.image || 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&h=675&fit=crop');
+        var authorInitial = (article.author || 'H').charAt(0).toUpperCase();
+
+        /* Update page meta */
+        document.getElementById('page-title').textContent = article.title + ' - HelloInsights Health';
+        document.getElementById('page-desc').setAttribute('content', article.description || '');
+        document.getElementById('page-canonical').setAttribute('href', 'https://health.helloinsights.online/article.html?slug=' + encodeURIComponent(article.slug));
+        document.getElementById('og-title').setAttribute('content', article.title + ' - HelloInsights Health');
+        document.getElementById('og-desc').setAttribute('content', article.description || '');
+        document.getElementById('og-url').setAttribute('href', 'https://health.helloinsights.online/article.html?slug=' + encodeURIComponent(article.slug));
+        document.getElementById('og-image').setAttribute('content', imgUrl);
+        document.getElementById('tw-title').setAttribute('content', article.title + ' - HelloInsights Health');
+        document.getElementById('tw-desc').setAttribute('content', article.description || '');
+        document.getElementById('tw-image').setAttribute('content', imgUrl);
+
+        var html = '';
+
+        /* Breadcrumb */
+        html += '<nav class="breadcrumb" aria-label="Breadcrumb" style="padding-top:20px;">';
+        html += '<a href="index.html">Home</a>';
+        html += '<span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span>';
+        html += '<a href="' + article.category + '.html">' + HI.sanitizeStr(catLabel) + '</a>';
+        html += '<span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span>';
+        html += '<span aria-current="page">' + HI.sanitizeStr(article.title.length > 50 ? article.title.substring(0, 50) + '...' : article.title) + '</span>';
+        html += '</nav>';
+
+        /* Article Hero */
+        html += '<div class="article-hero">';
+        html += '<img src="' + imgUrl + '" alt="' + HI.sanitizeStr(article.title) + '" class="article-hero-image" width="1200" height="675" fetchpriority="high" decoding="async">';
+
+        html += '<div class="article-header">';
+        html += '<a href="' + article.category + '.html" class="card-category" style="background:' + catColor + '20;color:' + catColor + ';display:inline-flex;margin-bottom:16px;">' + HI.sanitizeStr(catLabel) + '</a>';
+        html += '<h1>' + HI.sanitizeStr(article.title) + '</h1>';
+
+        /* Standfirst */
+        if (article.standfirst) {
+          html += '<p class="article-standfirst">' + HI.sanitizeStr(article.standfirst) + '</p>';
+        }
+
+        html += '<div class="article-meta">';
+        html += '<span class="article-author-avatar" aria-hidden="true">' + authorInitial + '</span>';
+        html += '<span>' + HI.sanitizeStr(article.author || 'HelloInsights Health Team') + '</span>';
+        html += '<span class="card-sep" aria-hidden="true">&middot;</span>';
+        html += '<time datetime="' + HI.sanitizeStr(article.date) + '">' + HI.formatDate(article.date) + '</time>';
+        if (article.readTime) {
+          html += '<span class="card-sep" aria-hidden="true">&middot;</span>';
+          html += '<span>' + article.readTime + ' min read</span>';
+        }
+        html += '</div>';
+        html += '</div>';
+        html += '</div>';
+
+        /* Content */
+        html += '<div class="article-content" itemprop="articleBody">';
+        html += formatContent(article.content);
+        html += '</div>';
+
+        /* Sources */
+        html += renderSources(article);
+
+        /* Medical Disclaimer */
+        html += '<div class="medical-disclaimer" role="note" aria-label="Medical disclaimer">';
+        html += '<strong>Medical Disclaimer</strong>';
+        html += 'This article is for general informational purposes only and does not constitute medical advice. ';
+        html += 'Always consult a qualified healthcare provider before making changes to your diet, exercise routine, or health regimen. ';
+        html += 'The information here reflects the best available evidence at the time of writing, but medical understanding evolves over time.';
+        html += '</div>';
+
+        /* Tags */
+        if (article.tags && article.tags.length > 0) {
+          html += '<div style="max-width:780px;margin:0 auto;padding-bottom:24px;border-bottom:1px solid #f3f4f6;">';
+          html += '<div class="card-tags" style="margin:0;">';
+          for (var t = 0; t < article.tags.length; t++) {
+            html += '<span class="tag">#' + HI.sanitizeStr(article.tags[t]) + '</span>';
+          }
+          html += '</div></div>';
+        }
+
+        /* Ad slot */
+        html += '<div class="ad-slot health-article-bottom" data-ad-slot="health-article-bottom" role="complementary" aria-label="Advertisement" style="max-width:780px;margin:30px auto;">';
+        html += '<span>Advertisement</span></div>';
+
+        /* Related Articles */
+        html += '<div class="related-articles">';
+        html += '<h2 class="section-title" style="max-width:780px;margin:0 auto 24px;">Related <span class="accent">Articles</span></h2>';
+        html += '<div class="card-grid card-grid-3" id="related-grid">';
+        html += '</div></div>';
+
+        container.innerHTML = html;
+
+        /* JSON-LD */
+        HI.injectJsonLd('article', article);
+        HI.injectJsonLd('breadcrumb', [
+          { name: 'Home', url: 'https://health.helloinsights.online/' },
+          { name: catLabel, url: 'https://health.helloinsights.online/' + article.category + '.html' },
+          { name: article.title, url: 'https://health.helloinsights.online/article.html?slug=' + article.slug }
+        ]);
+      }
+
+      function renderRelated(currentArticle) {
+        HI.loadData(function(data) {
+          var related = [];
+          for (var i = 0; i < data.articles.length; i++) {
+            var a = data.articles[i];
+            if (a.slug === currentArticle.slug) continue;
+            var score = 0;
+            if (a.category === currentArticle.category) score += 3;
+            if (a.tags && currentArticle.tags) {
+              for (var t = 0; t < a.tags.length; t++) {
+                if (currentArticle.tags.indexOf(a.tags[t]) !== -1) score += 1;
+              }
+            }
+            if (score > 0) {
+              related.push({ article: a, score: score });
+            }
+          }
+          related.sort(function(a, b) { return b.score - a.score; });
+          var top = [];
+          for (var r = 0; r < Math.min(3, related.length); r++) {
+            top.push(related[r].article);
+          }
+
+          /* If not enough related, fill with recent */
+          if (top.length < 3) {
+            var all = data.articles.slice().sort(function(a, b) {
+              return (b.date || '').localeCompare(a.date || '');
+            });
+            for (var j = 0; j < all.length && top.length < 3; j++) {
+              var exists = false;
+              for (var k = 0; k < top.length; k++) {
+                if (top[k].slug === all[j].slug) { exists = true; break; }
+              }
+              if (!exists && all[j].slug !== currentArticle.slug) {
+                top.push(all[j]);
+              }
+            }
+          }
+
+          var grid = document.getElementById('related-grid');
+          if (grid) {
+            var html = '';
+            for (var m = 0; m < top.length; m++) {
+              html += HI.createArticleCard(top[m], 'normal');
+            }
+            grid.innerHTML = html;
+          }
+        });
+      }
+
+      /* Main */
+      document.addEventListener('DOMContentLoaded', function() {
+        var slug = HI.getUrlParam('slug');
+        if (!slug) {
+          document.getElementById('article-container').innerHTML =
+            '<div class="error-state"><p>No article specified.</p><a href="index.html" class="btn btn-primary">Go Home</a></div>';
+          return;
+        }
+
+        HI.loadData(function(data) {
+          var article = null;
+          for (var i = 0; i < data.articles.length; i++) {
+            if (data.articles[i].slug === slug) {
+              article = data.articles[i];
+              break;
+            }
+          }
+
+          if (!article) {
+            document.getElementById('article-container').innerHTML =
+              '<div class="error-state"><p>Article not found. It may have been removed or the link is incorrect.</p><a href="index.html" class="btn btn-primary">Go Home</a></div>';
+            return;
+          }
+
+          renderArticle(article);
+          renderRelated(article);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
